@@ -147,7 +147,7 @@ var predictSentence = function(model, samplei, temperature, prev, s) {
 }
 
 $.ajax({
-  url: "test.json",
+  url: "checkpoint.json",
   dataType: 'json',
   async: false,
   data: {},

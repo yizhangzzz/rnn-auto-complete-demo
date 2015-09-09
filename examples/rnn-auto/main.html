@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RNN auto-completion</title>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style>
+      body{ padding:20px; padding-top:0px;}
+      .description{font-weight:200;font-size:13px;}
+      label{margin-top:5px;}
+
+      .theme-dropdown .dropdown-menu {
+        position: static;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .theme-showcase > p > .btn {
+        margin: 5px 0;
+      }
+
+      .theme-showcase .navbar .container {
+        width: auto;
+      }
+
+    </style>
+    <script type="text/javascript" src="autosuggest.js"></script>
+    <script>
+
+        window.onload = function () {
+        var oTextbox = new AutoSuggestControl(document.getElementById("form_input"));        
+    }
+      
+    </script>
+    
+  </head>
+  <body>
+      <h1>RNN auto-completion</h1>
+      <p>A multi-layer Recurrent Neural Network (RNN, LSTM, and GRU) trained on TED talks for auto-completing user's inputs. Based on char-rnn by <a href="https://twitter.com/karpathy">@karpathy</a>.</p> 
+
+
+      <label for="form_input">Primetext <span class="description">("seed" the state of the LSTM using a given sequence, before we do beam search.)</span></label>
+      <input name="form_input" type="text" class="container" id="form_input" placeholder="your text">
+</body>
+</html>

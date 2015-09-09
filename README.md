@@ -1,3 +1,7 @@
+# RNN auto-completion demo
+Source code in examples/rnn-auto/
+To run:  th render.lua
+Installation instructions: as follows. 
 # Waffle
 Waffle is a fast, asynchronous, express-inspired web framework for Lua/Torch built on top of [ASyNC](https://github.com/clementfarabet/async).
 
